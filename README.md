@@ -9,7 +9,11 @@ andrew@roborio-9999-frc:~/Documents/c_tmp
 > clang++ *.cpp
 andrew@roborio-9999-frc:~/Documents/c_tmp 
 > ./a.out
-Panda is being constructed 0x6010b0
-TrashPanda is being constructed 0x6010a8
+Panda a is being constructed
+Woof woof I am a
+Other panda: Woof woof I am 
+Panda b is being constructed
+Woof woof I am b
+Other panda: Woof woof I am a
 main
 ```

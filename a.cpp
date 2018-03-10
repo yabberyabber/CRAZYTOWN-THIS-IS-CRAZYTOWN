@@ -1,5 +1,5 @@
 #include "panda.h"
 
-extern TrashPanda b;
+extern Panda b;
 
-Panda a(&b);
+Panda a('a', b);

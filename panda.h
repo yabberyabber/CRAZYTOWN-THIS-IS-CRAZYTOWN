@@ -2,24 +2,22 @@
 
 #include <stdio.h>
 
-class TrashPanda;
-
 class Panda {
 public:
-    Panda(TrashPanda *trash) {
-        printf("Panda is being constructed %p\n", trash);
+    Panda(char id, Panda &other) : m_id(id) {
+        printf("Panda %c is being constructed\n", m_id);
+        this->Speak();
+        printf("Other panda: ");
+        other.Speak();
     }
 
     virtual ~Panda() {
     }
-};
 
-class TrashPanda {
-public:
-    TrashPanda(Panda *panda) {
-        printf("TrashPanda is being constructed %p\n", panda);
+    void Speak() {
+        printf("Woof woof I am %c\n", m_id);
     }
 
-    virtual ~TrashPanda() {
-    }
+private:
+    char m_id;
 };

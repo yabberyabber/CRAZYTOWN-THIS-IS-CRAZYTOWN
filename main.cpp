@@ -1,6 +1,6 @@
 #include "panda.h"
 
-extern TrashPanda b;
+extern Panda b;
 extern Panda a;
 
 int main(void) {

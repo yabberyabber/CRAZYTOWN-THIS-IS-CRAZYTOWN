@@ -2,4 +2,4 @@
 
 extern Panda a;
 
-TrashPanda b(&a);
+Panda b('b', a);
